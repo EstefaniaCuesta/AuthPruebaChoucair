@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f4ec03506ecf7907a57c6544abba53d38b2a3867af98a413e37257b9dcf2c6ab.html">Reto Choucair</a></span>
+                > <span class="truncate-60"><a
+                    href="b3ccca36a21bd4a71443341d64ba86c44f2550c3d580ae72db77747399a3cc9d.html">Create a new user in utest </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-07-2022 17:09</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Reto Choucair </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As an automator I am going to enter the utest page to fill out the form and create a new user
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Create a new user in utest
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="043343beccfeffff0955af9ca5df40beac2e4de3445eef82e43b94354c6bfbaf.png" title=" Given that yoana needs a new user to enter utest" width="1366"/>
+                <img src="043343beccfeffff0955af9ca5df40beac2e4de3445eef82e43b94354c6bfbaf.png" title=" Yoana open up" width="1366"/>
+                <img src="043343beccfeffff0955af9ca5df40beac2e4de3445eef82e43b94354c6bfbaf.png" title=" Yoana opens the Open up page" width="1366"/>
+                <img src="043343beccfeffff0955af9ca5df40beac2e4de3445eef82e43b94354c6bfbaf.png" title=" Yoana open up (completed)" width="1366"/>
+                <img src="40dff65ef7e2b2fb6909c6fb729bd6e698f8806bc7144e2b0fa428de85d709a5.png" title=" Yoana register" width="1366"/>
+                <img src="40dff65ef7e2b2fb6909c6fb729bd6e698f8806bc7144e2b0fa428de85d709a5.png" title=" Yoana clicks on button join today" width="1366"/>
+                <img src="40dff65ef7e2b2fb6909c6fb729bd6e698f8806bc7144e2b0fa428de85d709a5.png" title=" Yoana register (completed)" width="1366"/>
+                <img src="40dff65ef7e2b2fb6909c6fb729bd6e698f8806bc7144e2b0fa428de85d709a5.png" title=" Given that yoana needs a new user to enter utest (completed)" width="1366"/>
+                <img src="48325afe3241f1b2512358944858542fb6f955634ace62f24776f04f3014ab68.png" title=" When you go to utest.com and click on join today you will find the form to create a new user
+| strName | strLastname | strEmail | strLanguages | strCity | strPostalCode | strCountry | strDevice | strModel | strSystem | strPassword |
+| Yoana | Valest | yoana@test890.com | Spanish | Bogota | 111011 | Colombia | Apple | iPhone 11 | iOS 14.3 | Prueba12345. |" width="1366"/>
+                <img src="48325afe3241f1b2512358944858542fb6f955634ace62f24776f04f3014ab68.png" title=" Yoana first step" width="1366"/>
+                <img src="48325afe3241f1b2512358944858542fb6f955634ace62f24776f04f3014ab68.png" title=" Yoana enters 'Yoana' into enter name" width="1366"/>
+                <img src="4bf792814ba49282732512ab274019b55365a48e56c7a0e3d57e11507d8e88c6.png" title=" Yoana enters 'Valest' into enter lastname" width="1366"/>
+                <img src="43961120f880aa0f4bdbbc8c61415ee8efb926e6810c155ea98089b4f3659058.png" title=" Yoana enters 'yoana@test890.com' into enter email" width="1366"/>
+                <img src="172f4961c5016b7ddf693718016446da0fbd91b6924e1a43e4cb1056597279f3.png" title=" Yoana clicks on enter month" width="1366"/>
+                <img src="9b55499c9c68acdad4ecf6ea4d137b52deddffd9b23a7cdaaaeef5415a99201e.png" title=" Yoana clicks on enter day" width="1366"/>
+                <img src="42c107be982b27be1d0db6d81376749b2029c50dc3755b023b7b57dc2fdb6c5e.png" title=" Yoana clicks on enter year" width="1366"/>
+                <img src="53d4278b070e8c133d2a2508bf058cfff52af5a058f4f2fe3bb9556dda69e8be.png" title=" Yoana enters 'Spanish' into enter languages" width="1366"/>
+                <img src="40708887d824fd5eaecb8fd04cf67507abaca0c4a245aea4f56121b68930b259.png" title=" Yoana enters ENTER into enter languages" width="1366"/>
+                <img src="4c5473a994b1889b1bda26dab614b28e0302cd388d74738fa16f94b00f08e2d0.png" title=" Yoana clicks on button to continue to the next step" width="1366"/>
+                <img src="4c5473a994b1889b1bda26dab614b28e0302cd388d74738fa16f94b00f08e2d0.png" title=" Yoana first step (completed)" width="1366"/>
+                <img src="22421117d0bec6f7285af3b929323994c2c519f9e6e7af445e14b5481cf80a55.png" title=" Yoana second step" width="1366"/>
+                <img src="22421117d0bec6f7285af3b929323994c2c519f9e6e7af445e14b5481cf80a55.png" title=" Yoana enters 'Bogota' into enter city" width="1366"/>
+                <img src="5f57bd4c5c4fd418dd10acf034fc2a78c46e4f16c836483f2ae88a3be6a13824.png" title=" Yoana enters ARROW_DOWN into enter city" width="1366"/>
+                <img src="a90fcebca5f12b0080233da9777f29e4a11014eccce320621cc5ef9cc6214b33.png" title=" Yoana enters ENTER into enter city" width="1366"/>
+                <img src="3d8aa897962f2a2c2d074006530c8e6dbe1b6950521b03502bd895f60085fab8.png" title=" Yoana enters '111011' into enter postal code" width="1366"/>
+                <img src="b95b2601c029d996e942074ef975ac1a9ef33e4724d6b812848cecf76831079b.png" title=" Yoana clicks on select list country" width="1366"/>
+                <img src="213625ed94d3b5d1e6a455a0f6e092e66199685079062ba9b0125e7762be353d.png" title=" Yoana enters 'Colombia' into enter country" width="1366"/>
+                <img src="29fbab9e3eb87ff09dbd7933cfed8634bf91a7e0c91191604a53d060fd15ee0c.png" title=" Yoana enters ENTER into enter country" width="1366"/>
+                <img src="ade0f274babb8ecf890b515ee34be8ba55000ae606bc8710366f6e611195d897.png" title=" Yoana clicks on button to continue to the next step" width="1366"/>
+                <img src="ade0f274babb8ecf890b515ee34be8ba55000ae606bc8710366f6e611195d897.png" title=" Yoana second step (completed)" width="1366"/>
+                <img src="9b9fef3516c568aa1a9d9c0038cb938925d5274f18933f950fee7f20aca22365.png" title=" Yoana third step" width="1366"/>
+                <img src="9b9fef3516c568aa1a9d9c0038cb938925d5274f18933f950fee7f20aca22365.png" title=" Yoana clicks on device selection " width="1366"/>
+                <img src="8863d7982fa16d833001abcf0655e27eaa74a1726a7458a32668a1c74ad521a0.png" title=" Yoana enters 'Apple' into specific device selection" width="1366"/>
+                <img src="b6addb89baa4c64578f90622f1264bfc2af2d0560378a9e85df3163249194afa.png" title=" Yoana enters ENTER into specific device selection" width="1366"/>
+                <img src="b0eda8648f00c9429ef06bb8ed844ad927bc6911314ff82e821c91a122ad90b1.png" title=" Yoana clicks on model selection" width="1366"/>
+                <img src="bef5d81abe8424d4ac76d3c04c218605f04283e0b0140efd371219b39baf96b7.png" title=" Yoana enters 'iPhone 11' into specific model selection" width="1366"/>
+                <img src="437b125b003ea6a6eb5a3fca923d92329fe74e6a128d585451eaa756531a64a4.png" title=" Yoana enters ENTER into specific model selection" width="1366"/>
+                <img src="0a651e714b651fc78e4c69586589b2f10dceafa59cc6bdb1238cd2870c881ab0.png" title=" Yoana clicks on operating system selection" width="1366"/>
+                <img src="0e06758d1ca545893dddf8535fc282414d8e347c30aaf51054d2345a8ca275c6.png" title=" Yoana enters 'iOS 14.3' into  specific operating system selection" width="1366"/>
+                <img src="03da8da6cfceef90ade0002c300fdfa5a7ef268bb815d4aae9104dc4369bae48.png" title=" Yoana enters ENTER into  specific operating system selection" width="1366"/>
+                <img src="ec04479fa8a3e49a67031510361bf351a296d60589949ac6fa4ce8318f26f62c.png" title=" Yoana clicks on button to continue to the next step" width="1366"/>
+                <img src="ec04479fa8a3e49a67031510361bf351a296d60589949ac6fa4ce8318f26f62c.png" title=" Yoana third step (completed)" width="1366"/>
+                <img src="138009a06eaa442dec799e6bf1e2990e86dea01fb157697ede753ffb6a89c40a.png" title=" Yoana fourth step" width="1366"/>
+                <img src="138009a06eaa442dec799e6bf1e2990e86dea01fb157697ede753ffb6a89c40a.png" title=" Yoana enters 'Prueba12345.' into enter password" width="1366"/>
+                <img src="6651d1055f1a383c75f6d7c988fe931a6bac7f0a673507789c0b1b29b6ebf9b4.png" title=" Yoana enters 'Prueba12345.' into enter confirm password" width="1366"/>
+                <img src="120aea00c130eebe42acba4cbb63ef2999ddfedd58caad8906f11ac71106234c.png" title=" Yoana clicks on check to accept terms of use" width="1366"/>
+                <img src="43183ef6eb059597aad11e8a593ca3358569cf4647e3374929f7c084b195422e.png" title=" Yoana clicks on check to accept privacy policy" width="1366"/>
+                <img src="9a668ee80c34f02469ca2d52bd0f1239f6fc76e1fcf8a130614a78df8a4f8301.png" title=" Yoana clicks on button to finish" width="1366"/>
+                <img src="9a668ee80c34f02469ca2d52bd0f1239f6fc76e1fcf8a130614a78df8a4f8301.png" title=" Yoana fourth step (completed)" width="1366"/>
+                <img src="9a668ee80c34f02469ca2d52bd0f1239f6fc76e1fcf8a130614a78df8a4f8301.png" title=" When you go to utest.com and click on join today you will find the form to create a new user
+| strName | strLastname | strEmail | strLanguages | strCity | strPostalCode | strCountry | strDevice | strModel | strSystem | strPassword |
+| Yoana | Valest | yoana@test890.com | Spanish | Bogota | 111011 | Colombia | Apple | iPhone 11 | iOS 14.3 | Prueba12345. | (completed)" width="1366"/>
+                <img src="385d0b2e5c1be553e1bbd24d949ce43f74a451b9dd2e252725bcc5fd7386d827.png" title=" Then he fills out the form and obtains the new user to enter utest
+| strComplete |
+| Complete Setup |" width="1366"/>
+                <img src="385d0b2e5c1be553e1bbd24d949ce43f74a451b9dd2e252725bcc5fd7386d827.png" title=" Then answer" width="1366"/>
+                <img src="385d0b2e5c1be553e1bbd24d949ce43f74a451b9dd2e252725bcc5fd7386d827.png" title=" Then he fills out the form and obtains the new user to enter utest
+| strComplete |
+| Complete Setup | (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
